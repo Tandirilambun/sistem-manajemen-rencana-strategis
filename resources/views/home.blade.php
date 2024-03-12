@@ -38,7 +38,7 @@
         </div>
         <div class="col m-2 row row-cols-2 gap-3">
             @foreach ($periodes as $periode)
-                <div class="card renstra-parent border border-1" style="width: 12rem; height:12rem; border-radius:4rem;">
+                <div class="card renstra-parent border border-1" style="width: 12rem; height:12rem; border-radius:2rem;">
                     <a href="/renstrapage/{{ $periode->id_periode }}"
                         class="card-body d-flex justify-content-center align-items-center" style="text-decoration: none;">
                         <div>
@@ -47,7 +47,7 @@
                             </div>
                             <div class="mt-2" style="text-align: center">
                                 <h5 class="card-title rm-title"> {{ $periode->roadmap }} </h5>
-                                <h6 class="card-subtitle mt-1 rm-title" style="font-size: 9px"> {{ $periode->tahun_awal }} -
+                                <h6 class="card-subtitle mt-1 rm-title" style="font-size: 11px"> {{ $periode->tahun_awal }} -
                                     {{ $periode->tahun_akhir }} </h6>
                             </div>
                         </div>

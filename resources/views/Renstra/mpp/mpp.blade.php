@@ -81,6 +81,20 @@
                     {{ $periode->roadmap }} <br> {{ $periode->tahun_awal }} - {{ $periode->tahun_akhir }}
                 </p>
             </div>
+            <div class="container search-bar mb-4 py-4" id="container-search"
+                style="background-color: white; border-radius:10px;">
+                <div id="search-bar" class="mx-5" style="width:100%; height:100%;">
+                    <form class="form-search d-flex" action="/mpp_data_page/{{ $periode->id_periode }}" id="search-form">
+                        <input type="search" id="search-item" name="search" class="form-control"
+                            placeholder="Cari Indikator..." aria-label="Username" aria-describedby="basic-addon1"
+                            style="border-radius: 1rem 0 0 1rem; height:2rem; text-align:center"
+                            value="{{ isset($old_search) ? $old_search : old('old_search') }}">
+                        <button class="btnSrch btn py-0" type="submit" id="button-addon1"
+                            style="background-color: #0096FF; color:white; border-radius:0 1rem 1rem 0; height:2rem;"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
             <div class="rounded-4 p-3" style="background-color: white;">
                 <table class="table">
                     <thead>

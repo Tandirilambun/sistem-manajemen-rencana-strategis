@@ -159,6 +159,7 @@ class MPPController extends Controller
                 'query_outcome' => $query_outcome,
                 'query_use_of_output' => $query_use_of_output,
                 'query_output' => $query_output,
+                'old_search' => request('search')
             ]);
         }
     }

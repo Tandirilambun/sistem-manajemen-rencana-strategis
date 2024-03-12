@@ -1,3 +1,4 @@
+
 // Toast untuk Notifications
 let getBody = document.getElementById("body-html").getAttribute("data-value");
 let boolValue = getBody === "true";

@@ -21,15 +21,6 @@
                         @enderror
                     </div>
                     <div class="form-floating mb-2">
-                        <input type="text" name="username"
-                            class="form-control border border-0 rounded rounded-4 @error('username') is-invalid @enderror"
-                            id="username" placeholder="Username" value="{{ old('username') }}">
-                        <label for="floatingInput">Username</label>
-                        @error('username')
-                            <div class="invalid-feedback mb-2"> {{ $message }} </div>
-                        @enderror
-                    </div>
-                    <div class="form-floating mb-2">
                         <input type="email" name="email"
                             class="form-control border border-0 rounded rounded-4 @error('email') is-invalid @enderror"
                             id="email" placeholder="email@example.com" value="{{ old('email') }}">

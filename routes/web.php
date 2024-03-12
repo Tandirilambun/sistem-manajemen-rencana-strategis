@@ -33,6 +33,7 @@ use App\Http\Controllers\IndikatorOutcomeController;
 Route::get('/login', [LoginController::class, 'showLogin'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logoutUser']);
+Route::post('/login/google-login-authentication/{accessToken}',[LoginController::class, 'googleLogin']);
 
 Route::get('/register', [RegisterController::class, 'showRegister']);
 Route::post('/register', [RegisterController::class, 'store']);

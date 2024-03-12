@@ -101,7 +101,7 @@
 </div>
 <!-- Modal Renstra -->
 <div class="modal fade" id="modal-renstra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 50%;">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 40%;">
         <div class="modal-content border border-0">
             <div class="modal-header" style="background: #008800">
                 <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: white; font-weight:bold">Rencana
@@ -109,42 +109,37 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body container">
-                <div class="d-flex justify-content-center align-items-center" style="gap:2%;">
-                    <div class="col">
-                        <div class="card card-wrapper border border-0 rounded rounded-5"
-                            style="background:#008800;width:240px; height:140px;">
-                            <a href="/create/periode" data-bs-toggle="modal" data-bs-target="#validateCreate" class="card-body card-self py-5 border border-0 rounded rounded-5"
-                                style="width:auto; height:auto; text-decoration: none;">
-                                <h5 class="card-title"
-                                    style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
-                                    Add Data Rencana Strategis</h5>
-                            </a>
-                        </div>
+                <div class="d-flex flex-row justify-content-center align-items-center" style="gap:2%;">
+                    <div class="card card-wrapper border border-0 rounded rounded-5"
+                        style="background:#008800;width:240px; height:140px;">
+                        <a href="/create/periode" data-bs-toggle="modal" data-bs-target="#validateCreate"
+                            class="card-body card-self py-5 border border-0 rounded rounded-5"
+                            style="width:auto; height:auto; text-decoration: none;">
+                            <h5 class="card-title"
+                                style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
+                                Add Data Rencana Strategis</h5>
+                        </a>
                     </div>
-                    <div class="col">
-                        <div class="card card-wrapper border border-0 rounded rounded-5"
-                            style="background:#008800;width:240px; height:140px;">
-                            <a href="/data-page" class="card-body card-self py-5 rounded rounded-5"
-                                style=" width:auto; height:auto; text-decoration: none;">
-                                <h5 class="card-title"
-                                    style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
-                                    Arsip Data Rencana Strategis
-                                </h5>
-                            </a>
-                        </div>
+                    <div class="card card-wrapper border border-0 rounded rounded-5"
+                        style="background:#008800;width:240px; height:140px;">
+                        <a href="/data-page" class="card-body card-self py-5 rounded rounded-5"
+                            style=" width:auto; height:auto; text-decoration: none;">
+                            <h5 class="card-title"
+                                style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
+                                Arsip Data Rencana Strategis
+                            </h5>
+                        </a>
                     </div>
-                    <div class="col">
-                        <div class="card card-wrapper border border-0 rounded rounded-5"
-                            style="background:#008800;width:240px; height:140px;">
-                            <a data-bs-toggle="modal" data-bs-target="#modal-mpp-periode"
-                                class="card-body card-self py-5 rounded rounded-5 d-flex align-items-center justify-content-center"
-                                style=" width:auto; height:auto; text-decoration: none; ">
-                                <h5 class="card-title m-0"
-                                    style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
-                                    MPP Data Page
-                                </h5>
-                            </a>
-                        </div>
+                    <div class="card card-wrapper border border-0 rounded rounded-5"
+                        style="background:#008800;width:240px; height:140px;">
+                        <a data-bs-toggle="modal" data-bs-target="#modal-mpp-periode"
+                            class="card-body card-self py-5 rounded rounded-5 d-flex align-items-center justify-content-center"
+                            style=" width:auto; height:auto; text-decoration: none; ">
+                            <h5 class="card-title m-0"
+                                style="font-size: 20px; font-weight:bold; text-align:center; color:white;">
+                                MPP Data Page
+                            </h5>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -392,7 +387,8 @@
     </div>
 </div>
 
-<div class="modal fade" id="modal-mpp-periode" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modal-mpp-periode" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -412,10 +408,10 @@
                                     class="card-body card-self rounded rounded-5"
                                     style=" width:auto; height:auto; text-decoration: none;">
                                     <h5 class="card-title m-0"
-                                        style="font-size: 11px; font-weight:bold; text-align:center; color:white;">
+                                        style="font-size: 13px; font-weight:bold; text-align:center; color:white;">
                                         {{ $periode->roadmap }} <br>
                                         {{ $periode->tahun_awal }} - {{ $periode->tahun_akhir }} <br>
-                                        {{$periode -> flag_column_keterangan }} tingkat
+                                        {{ $periode->flag_column_keterangan }} tingkat
                                     </h5>
                                 </a>
                             </div>

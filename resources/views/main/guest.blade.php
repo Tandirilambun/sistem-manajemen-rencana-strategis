@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="baseURL" content="{{ url('/') }}">
 
     <title>SATUNAMA | Rencana Strategis</title>
 
@@ -46,9 +48,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/1bb83af319.js" crossorigin="anonymous"></script>
 
@@ -57,7 +56,13 @@
     <link rel="stylesheet" href="/css/animate.min.css">
     <link rel="stylesheet" href="/css/sweetalert2.min.css">
     <script src="/js/sweetalert2.min.js"></script>
-
+    {{-- <script type="text/javascript" src="{{url('/js/google.js')}}"></script> --}}
+    {{-- <script type="text/javascript" src="{{url('/js/firebase_conf.js')}}"></script> --}}
+    {{-- <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js"></script> --}}
 </head>
 
 <body style="background: #F8FAFB;">
@@ -100,6 +105,7 @@
 </div>
 
 <!-- Local JavaScript -->
-<script src="/js/index.js"></script>
+{{-- <script src="/js/index.js"></script> --}}
+
 
 </html>
