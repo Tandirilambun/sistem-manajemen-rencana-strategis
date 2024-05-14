@@ -8,7 +8,7 @@ use App\Models\Users;
 
 use Illuminate\Http\Request;
 
-class ControllerAuthSSO extends Controller
+class FirebaseAuthSSO extends Controller
 {
     protected $firebaseAuth;
 

@@ -16,7 +16,7 @@ use App\Http\Controllers\RequestLogController;
 use App\Http\Controllers\ActivityLogController;
 use App\Http\Controllers\RenstraPageController;
 use App\Http\Controllers\IndikatorOutcomeController;
-
+use App\Http\Controllers\FirebaseAuthSSO;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,6 +30,8 @@ use App\Http\Controllers\IndikatorOutcomeController;
 
 //Main Routes
 //Route for login & registration
+
+Route::get('/sso-auth', [FirebaseAuthSSO::class, 'sso_auth'])->name('sso-auth');
 Route::get('/login', [LoginController::class, 'showLogin'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logoutUser']);
